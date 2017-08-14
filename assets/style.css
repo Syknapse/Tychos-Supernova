@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	background-color: #f9f9f9;
+	font-size: 24px;
+	padding: 0 25px 0 25px;
+}
+
+.parallax1 {
+	background: url("https://static.pexels.com/photos/114990/nature-landscape-night-stars-114990.jpeg") no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 1000px;
+	display: table;
+	width: 100%;
+}
+
+.parallax2 {
+	background: url("https://www.oldbookillustrations.com/wp-content/high-res/n-d/herschel-1600.jpg") no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 500px;
+}
+
+.parallax3 {
+	background: url("https://www.oldbookillustrations.com/wp-content/high-res/n-d/herschel-1600.jpg") no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 500px;
+}
+
+.parallax4 {
+	background: url("https://www.oldbookillustrations.com/wp-content/high-res/n-d-1921/lonely-traveler-1600.jpg") no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 700px;
+}
+
+.parallax5 {
+	background: url("https://www.oldbookillustrations.com/wp-content/high-res/n-d/herschel-1600.jpg") no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 500px;
+}
+
+h3 {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	margin: 0;
+}
