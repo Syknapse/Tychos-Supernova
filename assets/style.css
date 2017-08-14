@@ -55,3 +55,26 @@ h3 {
 	text-align: center;
 	margin: 0;
 }
+
+.wrap {
+	position: relative;
+	width: 960px;
+}
+
+.words {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: purple;
+	color: #fff;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .8s, visibility .8s;
+}
+
+.wrap:hover .words {
+	visibility: visible;
+	opacity: 0.4;
+}
