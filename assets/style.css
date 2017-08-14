@@ -5,11 +5,16 @@
 }
 
 .container {
-	max-width: 960px;
+	max-width: 100%;
 	margin: 0 auto;
-	background-color: #f9f9f9;
+	background-color: black;
+	background: url("https://static.pexels.com/photos/8952/night-trees-milky-way-stars.jpg") no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
 	font-size: 24px;
-	padding: 0 25px 0 25px;
+	/*padding: 0 25px 0 25px;*/
+	/*border-right: 2.5% solid black;
+	border-left: 2.5% solid black;*/
 }
 
 .parallax1 {
@@ -19,6 +24,17 @@
 	height: 1000px;
 	display: table;
 	width: 100%;
+}
+
+h3 {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	margin: 0;
+}
+
+.test {
+	height: 500px;
 }
 
 .parallax2 {
@@ -42,23 +58,24 @@
 	height: 700px;
 }
 
+/*text appear on scroll*/
 .parallax5 {
 	background: url("https://www.oldbookillustrations.com/wp-content/high-res/n-d/herschel-1600.jpg") no-repeat center;
 	background-size: cover;
 	background-attachment: fixed;
 	height: 500px;
-}
-
-h3 {
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-	margin: 0;
-}
-
-.wrap {
 	position: relative;
-	width: 960px;
+}
+
+.wrap-under {
+	background-color: transparent;
+	min-width: 100%;
+	min-height: 700px;
+}
+
+.parallax5:hover .words {
+	visibility: visible;
+	opacity: 0.4;
 }
 
 .words {
@@ -72,6 +89,16 @@ h3 {
 	visibility: hidden;
 	opacity: 0;
 	transition: opacity .8s, visibility .8s;
+}
+
+/*__________________________________*/
+
+
+.wrap {
+	position: relative;
+	width: 100%;
+	background-color: black;
+	z-index: 0;
 }
 
 .wrap:hover .words {
