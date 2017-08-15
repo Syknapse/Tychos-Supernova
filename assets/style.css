@@ -4,65 +4,81 @@
 	border: 0;
 }
 
+body {
+	background-color: black;
+}
+
 .container {
 	max-width: 100%;
 	margin: 0 auto;
-	background-color: black;
-	background: url("bn.jpg") no-repeat center;
+	background: url("https://static.pexels.com/photos/18810/pexels-photo.jpg") no-repeat center;
 	background-size: cover;
 	background-attachment: fixed;
 	font-size: 24px;
+	font-family: 'Saira Semi Condensed', sans-serif;
 	/*padding: 0 25px 0 25px;*/
 	/*border-right: 2.5% solid black;
 	border-left: 2.5% solid black;*/
 }
 
-.parallax1 {
-	background: url("https://static.pexels.com/photos/114990/nature-landscape-night-stars-114990.jpeg") no-repeat center;
-	background-size: cover;
-	background-attachment: fixed;
+/*------------Parallax ONE------------*/
+.img1 {
+	background: url("https://static.pexels.com/photos/114990/nature-landscape-night-stars-114990.jpeg");
 	height: 1000px;
 	display: table;
 	width: 100%;
 }
 
-h3 {
+#title {
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
 	margin: 0;
 }
 
-.test {
+#title p {
+	margin-left: 230px;
+}
+
+/*------------Parallax TWO------------*/
+.img2 {
+	background: url("https://static.pexels.com/photos/557167/pexels-photo-557167.jpeg");
 	height: 1000px;
+	width: 100%;
+	position: relative;
+	text-align: center;
 }
 
-.parallax2 {
-	background: url("https://www.oldbookillustrations.com/wp-content/high-res/n-d/herschel-1600.jpg") no-repeat center;
-	background-size: cover;
-	background-attachment: fixed;
+.img2:hover .words {
+	visibility: visible;
+	opacity: 0.4;
+}
+
+.img2 .words {
+	margin-top: 200px;
+}
+
+
+
+.img3 {
+	background: url("https://www.oldbookillustrations.com/wp-content/high-res/n-d/herschel-1600.jpg");
 	height: 500px;
+	margin-left: 200px;
+	max-width: 960px;
 }
 
-.parallax3 {
-	background: url("https://www.oldbookillustrations.com/wp-content/high-res/n-d/herschel-1600.jpg") no-repeat center;
-	background-size: cover;
-	background-attachment: fixed;
-	height: 500px;
-}
 
-.parallax4 {
-	background: url("https://www.oldbookillustrations.com/wp-content/high-res/n-d-1921/lonely-traveler-1600.jpg") no-repeat center;
-	background-size: cover;
-	background-attachment: fixed;
+
+.img4 {
+	background: url("https://www.oldbookillustrations.com/wp-content/high-res/n-d-1921/lonely-traveler-1600.jpg");
 	height: 700px;
 }
 
+
+
 /*text appear on scroll*/
-.parallax5 {
-	background: url("https://www.oldbookillustrations.com/wp-content/high-res/n-d/herschel-1600.jpg") no-repeat center;
-	background-size: cover;
-	background-attachment: fixed;
+.img5 {
+	background: url("https://www.oldbookillustrations.com/wp-content/high-res/n-d/herschel-1600.jpg");
 	height: 500px;
 	position: relative;
 }
@@ -73,7 +89,7 @@ h3 {
 	min-height: 700px;
 }
 
-.parallax5:hover .words {
+.img5:hover .words {
 	visibility: visible;
 	opacity: 0.4;
 }
@@ -84,17 +100,25 @@ h3 {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: purple;
+	/*background: purple;*/
 	color: #fff;
 	visibility: hidden;
 	opacity: 0;
 	transition: opacity .9s, visibility .4s;
 }
-
 /*__________________________________*/
 
+/*------------PARALLAX effect class------------*/
+.parallax {
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+}
 
-.wrap {
+
+
+/*.wrap {
 	position: relative;
 	width: 100%;
 	background-color: black;
@@ -104,4 +128,4 @@ h3 {
 .wrap:hover .words {
 	visibility: visible;
 	opacity: 0.4;
-}
+}*/
