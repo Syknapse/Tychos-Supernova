@@ -8,7 +8,7 @@
 	max-width: 100%;
 	margin: 0 auto;
 	background-color: black;
-	background: url("https://static.pexels.com/photos/8952/night-trees-milky-way-stars.jpg") no-repeat center;
+	background: url("bn.jpg") no-repeat center;
 	background-size: cover;
 	background-attachment: fixed;
 	font-size: 24px;
@@ -34,7 +34,7 @@ h3 {
 }
 
 .test {
-	height: 500px;
+	height: 1000px;
 }
 
 .parallax2 {
@@ -88,7 +88,7 @@ h3 {
 	color: #fff;
 	visibility: hidden;
 	opacity: 0;
-	transition: opacity .8s, visibility .8s;
+	transition: opacity .9s, visibility .4s;
 }
 
 /*__________________________________*/
