@@ -11,18 +11,19 @@ body {
 .container {
 	max-width: 100%;
 	margin: 0 auto;
-	background: url("https://static.pexels.com/photos/18810/pexels-photo.jpg") no-repeat center;
-	background-size: cover;
+	/*background: url("https://static.pexels.com/photos/18810/pexels-photo.jpg") no-repeat;
+	background-size: contain;
 	background-attachment: fixed;
-	font-size: 24px;
+	background-position: 150%;*/
+	font-size: 1.5vw; /* ++ MQ 2.5vw ++ */
 	font-family: 'Saira Semi Condensed', sans-serif;
 	/*padding: 0 25px 0 25px;*/
 	/*border-right: 2.5% solid black;
 	border-left: 2.5% solid black;*/
 }
 
-/*------------Parallax ONE------------*/
-.img1 {
+/*------------Parallax Section ONE------------*/
+.layer1 {
 	background: url("https://static.pexels.com/photos/114990/nature-landscape-night-stars-114990.jpeg");
 	height: 1000px;
 	display: table;
@@ -40,8 +41,8 @@ body {
 	margin-left: 230px;
 }
 
-/*------------Parallax TWO------------*/
-.img2 {
+/*------------Parallax Section TWO------------*/
+.layer2 {
 	background: url("https://static.pexels.com/photos/557167/pexels-photo-557167.jpeg");
 	height: 1000px;
 	width: 100%;
@@ -49,36 +50,124 @@ body {
 	text-align: center;
 }
 
-.img2:hover .words {
+.layer2:hover .words {
 	visibility: visible;
 	opacity: 0.4;
 }
 
-.img2 .words {
+.layer2 .words {
 	margin-top: 200px;
 }
 
-
-
-.img3 {
+/*------------Parallax Section THREE------------*/ 
+.layer3 {
 	background: url("https://www.oldbookillustrations.com/wp-content/high-res/n-d/herschel-1600.jpg");
-	height: 500px;
-	margin-left: 200px;
-	max-width: 960px;
+	background-size: 60% auto !important;
+	height: 30vw;
+	margin-left: 42%;
+	margin-bottom: 80px; /* ++ MQ ++ */
+	margin-top: 80px;
+	width: 30vw;
 }
 
+.text1 {
+	color: white;
+	height: 25vw;
+	width: 25vw;
+	float: left;
+	margin-left: 15%;
+	margin-top: 15%;
+}
 
+.layer4 {
+	background: url("https://www.oldbookillustrations.com/wp-content/high-res/n-d/herschel-1600.jpg");
+	background-size: 60% auto !important;
+	height: 30vw;
+	margin-left: 25%;
+	margin-bottom: 80px; /* ++ MQ ++ */
+	width: 30vw;
+}
 
-.img4 {
-	background: url("https://www.oldbookillustrations.com/wp-content/high-res/n-d-1921/lonely-traveler-1600.jpg");
+.text2 {
+	color: white;
+	height: 25vw;
+	width: 25vw;
+	float: right;
+	margin-right: 15%;
+	margin-top: 8%;
+}
+
+.layer5 {
+	background: url("https://www.oldbookillustrations.com/wp-content/high-res/n-d/herschel-1600.jpg");
+	background-size: 60% auto !important;
 	height: 700px;
+	width: 100%;
 }
+
+/*------------Parallax Section FOUR------------*/ 
+.layer6 {
+	background: url("https://static.pexels.com/photos/18810/pexels-photo.jpg");
+	background-size: contain !important;
+	height: 1000px;
+	width: 100%;
+	position: relative;
+}
+
+.layer6:hover .words {
+	visibility: visible;
+	opacity: 0.4;
+}
+
+.layer6 .words {
+	margin-top: 200px;
+	width: 35vw;
+	margin-left: 15%;
+}
+
+/*------------Parallax Section FIVE------------*/ 
+.layer7 {
+	background: url("https://upload.wikimedia.org/wikipedia/commons/1/17/Jacques_de_Gheyn_Ii_-_Portrait_of_Tycho_Brahe%2C_astronomer_%28without_a_hat%29_-_Google_Art_Project.jpg");
+	background-size: 60% auto !important;
+	height: 70vh;
+	width: 40vw;
+	margin-left: 42%;
+	margin-bottom: 80px; /* ++ MQ ++ */
+	/*margin-top: 80px;*/
+}
+
+.text3 {
+	color: white;
+	height: 25vw;
+	width: 25vw;
+	float: left;
+	margin-left: 17%;
+	margin-top: 12%;
+}
+
+.layer8 {
+	background: url("https://upload.wikimedia.org/wikipedia/commons/b/bc/Tycho-Brahe-Mural-Quadrant.jpg");
+	background-size: 60% auto !important;
+	height: 70vh;
+	width: 40vw;
+	margin-left: 25%;
+	margin-bottom: 80px; /* ++ MQ ++ */
+}
+
+.text4 {
+	color: white;
+	height: 25vw;
+	width: 25vw;
+	float: right;
+	margin-right: 8%;
+	margin-top: 8%;
+}
+
 
 
 
 /*text appear on scroll*/
-.img5 {
-	background: url("https://www.oldbookillustrations.com/wp-content/high-res/n-d/herschel-1600.jpg");
+.layer10 {
+	background: url("https://upload.wikimedia.org/wikipedia/commons/8/8c/Tycho_Cas_SN1572.jpg");
 	height: 500px;
 	position: relative;
 }
@@ -89,7 +178,7 @@ body {
 	min-height: 700px;
 }
 
-.img5:hover .words {
+.layer10:hover .words {
 	visibility: visible;
 	opacity: 0.4;
 }
@@ -104,7 +193,7 @@ body {
 	color: #fff;
 	visibility: hidden;
 	opacity: 0;
-	transition: opacity .9s, visibility .4s;
+	transition: opacity .9s, visibility .3s;
 }
 /*__________________________________*/
 
