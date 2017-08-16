@@ -241,7 +241,7 @@ a {
 	vertical-align: middle;
 	text-align: center;
 	height: 10vw;
-	width: 25vw;
+	width: 40vw;
 	border: 1px solid white;
 	margin: 20px;
 	transition: background-color .6s;
@@ -313,16 +313,18 @@ footer:hover a {
 }
 
 
+/*------------Media Queries------------*/
 
-
-/*.wrap {
-	position: relative;
-	width: 100%;
-	background-color: black;
-	z-index: 0;
+/*-------medium--------*/
+@media screen and (max-width: 1200px){
+	body {
+		font-size: 1.9vw;
+	}
 }
 
-.wrap:hover .words {
-	visibility: visible;
-	opacity: 0.4;
-}*/
+/*-------small--------*/
+@media screen and (max-width: 760px){
+	body {
+		font-size: 2.8vw;
+	}
+}
