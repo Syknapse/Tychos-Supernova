@@ -20,7 +20,8 @@ body {
 
 /*------------Parallax Section ONE landing------------*/
 .layer1 {
-	background: url("https://static.pexels.com/photos/114990/nature-landscape-night-stars-114990.jpeg");
+	background-image: url("images/sky.jpeg");
+		/*https://static.pexels.com/photos/114990/nature-landscape-night-stars-114990.jpeg*/
 	height: 115vh;
 	display: grid;
 	width: 100%;
@@ -37,7 +38,8 @@ body {
 
 /*------------Parallax Section TWO bnw------------*/
 .layer2 {
-	background: url("https://static.pexels.com/photos/557167/pexels-photo-557167.jpeg");
+	background: url("images/skybw.jpeg");
+		/*https://static.pexels.com/photos/557167/pexels-photo-557167.jpeg*/
 	height: 115vh;
 	width: 100%;
 	position: relative;
@@ -125,7 +127,8 @@ body {
 
 /*------------Parallax Section FOUR moon------------*/ 
 .layer6 {
-	background: url("https://static.pexels.com/photos/18810/pexels-photo.jpg");
+	background: url("images/moon.jpg");
+		/*https://static.pexels.com/photos/18810/pexels-photo.jpg*/
 	background-size: contain !important;
 	height: 105vh;
 	width: 100%;
@@ -181,7 +184,8 @@ body {
 
 /*------------Parallax Section SEVEN revolution------------*/ 
 .layer11 {
-	background: url("https://static.pexels.com/photos/8952/night-trees-milky-way-stars.jpg");
+	background: url("images/galaxy.jpg");
+		/*https://static.pexels.com/photos/8952/night-trees-milky-way-stars.jpg*/
 	height: 140vh;
 	width: 100%;
 	position: relative;
