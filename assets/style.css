@@ -217,7 +217,7 @@ a {
 
 .links {
 	text-align: center;
-	height: 8vw;
+	height: 15vh;
 	width: 30vw;
 	border: 1px solid white;
 	margin: 20px auto 20px auto;
@@ -291,9 +291,46 @@ footer:hover a {
 	}
 }
 
+@media screen and (max-width: 1024px){
+	.words {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	.grid-left, .grid-right {
+		grid-template-columns: 100vw;
+		grid-template-areas: 
+			"img"
+			"text";
+	}
+
+	.layer3, .layer5 {
+		display: none;
+	}
+
+	.layer11 {
+		height: 100vh;
+	}
+
+	.layer10, .layer9, .layer8, layer7 {
+		background-size: 65% auto !important;
+
+	}
+
+	.links {
+		width: 40vw;
+		transition: none;
+	}
+}
+
 /*-------small--------*/
 @media screen and (max-width: 760px){
 	.container {
 		font-size: 1.3em;
+	}
+
+	.links {
+		width: 80vw;
+		height: 13vh;
 	}
 }
