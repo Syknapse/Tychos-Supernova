@@ -41,6 +41,7 @@ body {
 	width: 100%;
 	position: relative;
 	text-align: center;
+	margin-bottom: 8vh;
 }
 
 #quote {
@@ -61,52 +62,61 @@ body {
 	margin-top: 200px;
 }
 
-/*------------Parallax Section THREE tycho------------*/ 
-.layer3 {
-	background: url("https://upload.wikimedia.org/wikipedia/commons/b/bc/Tycho-Brahe-Mural-Quadrant.jpg");
-	background-size: 60% auto !important;
-	height: 30vw;
-	margin-left: 42%;
-	margin-bottom: 80px; /* ++ MQ ++ */
-	margin-top: 80px;
-	width: 30vw;
+/*------------ ** GRID ** ------------*/
+.grid-right {
+	display: grid;
+	grid-template-columns: auto 30vw 34vw auto;
+	grid-template-areas: ". text img .";
+}
+
+.grid-left {
+	display: grid;
+	grid-template-columns: auto 34vw 30vw auto;
+	grid-template-areas: ". img text .";
+}
+
+.img-grid {
+	grid-area: img;
+	height: 50vh;
+	margin-bottom: 8vh;
 	border-radius: 20px;
 }
 
-.text1 {
+.text-right {
+	grid-area: text;
 	color: white;
-	height: 25vw;
-	width: 25vw;
-	float: left;
-	margin-left: 15%;
-	margin-top: 15%;
+	align-self: center;
+	text-align: center;
+	margin: 0 auto 80px auto;
+	padding-left: 1vw;
+}
+
+.text-left {
+	grid-area: text;
+	color: white;
+	align-self: center;
+	text-align: center;
+	margin: 0 auto 80px auto;
+	padding-right: 1vw;
+}
+
+/*------------Parallax Section THREE tycho------------*/ 
+.layer3 {
+	background: url("https://upload.wikimedia.org/wikipedia/commons/b/bc/Tycho-Brahe-Mural-Quadrant.jpg");
+	background-size: 66% auto !important;
 }
 
 .layer4 {
 	background: url("https://upload.wikimedia.org/wikipedia/commons/b/bc/Tycho-Brahe-Mural-Quadrant.jpg");
-	background-size: 60% auto !important;
-	height: 30vw;
-	margin-left: 25%;
-	margin-bottom: 80px; /* ++ MQ ++ */
-	width: 30vw;
-	border-radius: 20px;
-}
-
-.text2 {
-	color: white;
-	height: 25vw;
-	width: 25vw;
-	float: right;
-	margin-right: 15%;
-	margin-top: 8%;
+	background-size: 66% auto !important;
 }
 
 .layer5 {
 	background: url("https://upload.wikimedia.org/wikipedia/commons/b/bc/Tycho-Brahe-Mural-Quadrant.jpg");
-	background-size: 60% auto !important;
+	background-size: 66% auto !important;
 	height: 700px;
-	width: 60%;
-	margin-left: 20%;
+	width: 66%;
+	margin: auto;
 	border-radius: 20px;
 }
 
@@ -132,54 +142,16 @@ body {
 }
 
 /*------------Parallax Section FIVE proof------------*/ 
-.grid-right {
-	display: grid;
-	grid-template-columns: auto 30vw 34vw auto;
-	grid-template-areas: ". text img .";
-}
-
 .layer7 {
 	background: url("https://upload.wikimedia.org/wikipedia/commons/1/17/Jacques_de_Gheyn_Ii_-_Portrait_of_Tycho_Brahe%2C_astronomer_%28without_a_hat%29_-_Google_Art_Project.jpg");
 	background-size: 37% auto !important;
 	background-position: 74% !important;
-	height: 50vh;
-	margin-bottom: 8vh;
-	border-radius: 20px;
-	grid-area: img;
-}
-
-.text-left {
-	color: white;
-	grid-area: text;
-	align-self: center;
-	text-align: center;
-	margin: 0 auto 80px auto;
-	padding-right: 1vw;
-}
-
-.grid-left {
-	display: grid;
-	grid-template-columns: auto 34vw 30vw auto;
-	grid-template-areas: ". img text .";
 }
 
 .layer8 {
 	background: url("https://www.oldbookillustrations.com/wp-content/high-res/n-d/herschel-1600.jpg");
 	background-size: 37% auto !important;
 	background-position: 26% !important;
-	height: 50vh;
-	margin-bottom: 8vh;
-	border-radius: 20px;
-	grid-area: img;
-}
-
-.text-right {
-	color: white;
-	grid-area: text;
-	align-self: center;
-	text-align: center;
-	margin: 0 auto 80px auto;
-	padding-left: 1vw;
 }
 
 /*------------Parallax Section SIX star map------------*/ 
@@ -187,20 +159,12 @@ body {
 	background: url("https://upload.wikimedia.org/wikipedia/commons/8/8c/Tycho_Cas_SN1572.jpg");
 	background-size: 37% auto !important;
 	background-position: 74% !important;
-	height: 50vh;
-	margin-bottom: 8vh;
-	border-radius: 20px;
-	grid-area: img;
 }
 
 .layer10 {
 	background: url("https://upload.wikimedia.org/wikipedia/commons/b/b2/Tycho_Brahe%27s_Stjerneborg.jpg");
 	background-size: 37% auto !important;
 	background-position: 26% !important;
-	height: 50vh;
-	margin-bottom: 8vh;
-	border-radius: 20px;
-	grid-area: img;
 }
 
 #big {
