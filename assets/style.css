@@ -297,6 +297,12 @@ footer:hover a {
 		opacity: 1;
 	}
 
+	#quote {
+		font-weight: 700;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
 	.grid-left, .grid-right {
 		grid-template-columns: 100vw;
 		grid-template-areas: 
@@ -314,7 +320,6 @@ footer:hover a {
 
 	.layer10, .layer9, .layer8, layer7 {
 		background-size: 65% auto !important;
-
 	}
 
 	.links {
