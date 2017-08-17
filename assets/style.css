@@ -6,15 +6,16 @@
 
 body {
 	background-color: black;
-	font-size: 1.5vw; /* ++ MQ 2.5vw ++ */
-	font-family: 'Saira Semi Condensed', sans-serif;
-	line-height: 200%;
-	letter-spacing: 3px;
+	font-size: 10px;
 }
 
 .container {
 	max-width: 100%;
 	margin: 0 auto;
+	font-size: 2.5em;
+	font-family: 'Saira Semi Condensed', sans-serif;
+	line-height: 200%;
+	letter-spacing: 3px;
 }
 
 /*------------Parallax Section ONE landing------------*/
@@ -31,13 +32,13 @@ body {
 }
 
 #title p {
-	margin-left: 230px;
+	margin-left: 23vw;
 }
 
 /*------------Parallax Section TWO bnw------------*/
 .layer2 {
 	background: url("https://static.pexels.com/photos/557167/pexels-photo-557167.jpeg");
-	height: 1000px;
+	height: 115vh;
 	width: 100%;
 	position: relative;
 	text-align: center;
@@ -47,10 +48,12 @@ body {
 #quote {
 	padding-top: 30px;
 	line-height: 130%;
+	font-weight: 300;
+	font-size: 1.3em;
 }
 
 #quote span {
-	margin-left: 320px;
+	margin-left: 23vw;
 }
 
 .layer2:hover .words {
@@ -59,7 +62,7 @@ body {
 }
 
 .layer2 .words {
-	margin-top: 200px;
+	margin-top: 22vh;
 }
 
 /*------------ ** GRID ** ------------*/
@@ -87,7 +90,7 @@ body {
 	color: white;
 	align-self: center;
 	text-align: center;
-	margin: 0 auto 80px auto;
+	margin: 0 auto 8vh auto;
 	padding-left: 1vw;
 }
 
@@ -96,7 +99,7 @@ body {
 	color: white;
 	align-self: center;
 	text-align: center;
-	margin: 0 auto 80px auto;
+	margin: 0 auto 8vh auto;
 	padding-right: 1vw;
 }
 
@@ -114,7 +117,7 @@ body {
 .layer5 {
 	background: url("https://upload.wikimedia.org/wikipedia/commons/b/bc/Tycho-Brahe-Mural-Quadrant.jpg");
 	background-size: 66% auto !important;
-	height: 700px;
+	height: 70vh;
 	width: 66%;
 	margin: auto;
 	border-radius: 20px;
@@ -124,7 +127,7 @@ body {
 .layer6 {
 	background: url("https://static.pexels.com/photos/18810/pexels-photo.jpg");
 	background-size: contain !important;
-	height: 1000px;
+	height: 105vh;
 	width: 100%;
 	margin-bottom: 18px;
 	position: relative;
@@ -132,11 +135,11 @@ body {
 
 .layer6:hover .words {
 	visibility: visible;
-	opacity: 0.4;
+	opacity: 0.9;
 }
 
 .layer6 .words {
-	margin-top: 200px;
+	margin-top: 22vh;
 	width: 35vw;
 	margin-left: 15%;
 }
@@ -168,16 +171,18 @@ body {
 }
 
 #big {
-	margin: 50px auto;
+	margin: 5px auto 60px auto;
 	text-align: center;
-	font-size: 2.5em;
 	color: white;
+	line-height: 130%;
+	font-weight: 300;
+	font-size: 1.3em;
 }
 
 /*------------Parallax Section SEVEN revolution------------*/ 
 .layer11 {
 	background: url("https://static.pexels.com/photos/8952/night-trees-milky-way-stars.jpg");
-	height: 1200px;
+	height: 140vh;
 	width: 100%;
 	position: relative;
 	text-align: center;
@@ -185,11 +190,11 @@ body {
 
 .layer11:hover .words {
 	visibility: visible;
-	opacity: 0.4;
+	opacity: 0.9;
 }
 
 .layer11 .words {
-	margin-top: 200px;
+	margin-top: 22vh;
 }
 
 /*------------Parallax Section EIGHT end------------*/ 
@@ -199,18 +204,19 @@ a {
 }
 
 #info {
-	display: table;
-	margin: auto;
+	display: grid;
+}
+
+.info-grid {
+	justify-self: center;
 }
 
 .links {
-	display: table-cell block;
-	vertical-align: middle;
 	text-align: center;
-	height: 10vw;
-	width: 40vw;
+	height: 8vw;
+	width: 30vw;
 	border: 1px solid white;
-	margin: 20px;
+	margin: 20px auto 20px auto;
 	transition: background-color .6s;
 }
 
@@ -221,10 +227,9 @@ a {
 
 #info div h3 {
 	color: white;
-	display: table-cell;
-	vertical-align: middle;
+	margin: auto;
+	text-align: center;
 	padding-top: 50px;
-	padding-left: 20px;
 }
 
 footer p {
@@ -261,7 +266,7 @@ footer:hover a {
 	color: white;
 	visibility: hidden;
 	opacity: 0;
-	transition: opacity 2.0s, visibility .2s;
+	transition: opacity .9s, visibility .2s;
 }
 
 /*------------PARALLAX effect class------------*/
@@ -277,14 +282,14 @@ footer:hover a {
 
 /*-------medium--------*/
 @media screen and (max-width: 1200px){
-	body {
-		font-size: 1.9vw;
+	.container {
+		font-size: 1.9em;
 	}
 }
 
 /*-------small--------*/
 @media screen and (max-width: 760px){
-	body {
-		font-size: 2.8vw;
+	.container {
+		font-size: 1.3em;
 	}
 }
