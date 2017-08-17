@@ -15,22 +15,19 @@ body {
 .container {
 	max-width: 100%;
 	margin: 0 auto;
-	
 }
 
 /*------------Parallax Section ONE landing------------*/
 .layer1 {
 	background: url("https://static.pexels.com/photos/114990/nature-landscape-night-stars-114990.jpeg");
 	height: 115vh;
-	display: table;
+	display: grid;
 	width: 100%;
 }
 
 #title {
-	display: table-cell;
-	vertical-align: middle;
 	text-align: center;
-	margin: 0;
+	margin: auto;
 }
 
 #title p {
@@ -73,6 +70,7 @@ body {
 	margin-bottom: 80px; /* ++ MQ ++ */
 	margin-top: 80px;
 	width: 30vw;
+	border-radius: 20px;
 }
 
 .text1 {
@@ -91,6 +89,7 @@ body {
 	margin-left: 25%;
 	margin-bottom: 80px; /* ++ MQ ++ */
 	width: 30vw;
+	border-radius: 20px;
 }
 
 .text2 {
@@ -108,6 +107,7 @@ body {
 	height: 700px;
 	width: 60%;
 	margin-left: 20%;
+	border-radius: 20px;
 }
 
 /*------------Parallax Section FOUR moon------------*/ 
@@ -116,6 +116,7 @@ body {
 	background-size: contain !important;
 	height: 1000px;
 	width: 100%;
+	margin-bottom: 18px;
 	position: relative;
 }
 
@@ -131,80 +132,82 @@ body {
 }
 
 /*------------Parallax Section FIVE proof------------*/ 
-.layer7 {
-	background: url("https://upload.wikimedia.org/wikipedia/commons/1/17/Jacques_de_Gheyn_Ii_-_Portrait_of_Tycho_Brahe%2C_astronomer_%28without_a_hat%29_-_Google_Art_Project.jpg");
-	background-size: 42% auto !important;
-	background-position: 72% !important;
-	height: 70vh;
-	width: 40vw;
-	margin-left: 42%;
-	margin-bottom: 80px; /* ++ MQ ++ */
-	margin-top: 18px;
+.grid-right {
+	display: grid;
+	grid-template-columns: auto 30vw 34vw auto;
+	grid-template-areas: ". text img .";
 }
 
-.text3 {
+.layer7 {
+	background: url("https://upload.wikimedia.org/wikipedia/commons/1/17/Jacques_de_Gheyn_Ii_-_Portrait_of_Tycho_Brahe%2C_astronomer_%28without_a_hat%29_-_Google_Art_Project.jpg");
+	background-size: 37% auto !important;
+	background-position: 74% !important;
+	height: 50vh;
+	margin-bottom: 8vh;
+	border-radius: 20px;
+	grid-area: img;
+}
+
+.text-left {
 	color: white;
-	height: 25vw;
-	width: 25vw;
-	float: left;
-	margin-left: 17%;
-	margin-top: 12%;
+	grid-area: text;
+	align-self: center;
+	text-align: center;
+	margin: 0 auto 80px auto;
+	padding-right: 1vw;
+}
+
+.grid-left {
+	display: grid;
+	grid-template-columns: auto 34vw 30vw auto;
+	grid-template-areas: ". img text .";
 }
 
 .layer8 {
 	background: url("https://www.oldbookillustrations.com/wp-content/high-res/n-d/herschel-1600.jpg");
-	background-size: 42% auto !important;
-	background-position: 42% !important;
-	height: 70vh;
-	width: 40vw;
-	margin-left: 25%;
-	margin-bottom: 80px; /* ++ MQ ++ */
+	background-size: 37% auto !important;
+	background-position: 26% !important;
+	height: 50vh;
+	margin-bottom: 8vh;
+	border-radius: 20px;
+	grid-area: img;
 }
 
-.text4 {
+.text-right {
 	color: white;
-	height: 25vw;
-	width: 25vw;
-	float: right;
-	margin-right: 8%;
-	margin-top: 8%;
+	grid-area: text;
+	align-self: center;
+	text-align: center;
+	margin: 0 auto 80px auto;
+	padding-left: 1vw;
 }
 
 /*------------Parallax Section SIX star map------------*/ 
 .layer9 {
 	background: url("https://upload.wikimedia.org/wikipedia/commons/8/8c/Tycho_Cas_SN1572.jpg");
-	background-size: 35% auto !important;
-	background-position: 23% !important;
-	height: 900px;
-	position: relative;
-}
-
-.layer9:hover .words {
-	visibility: visible;
-	opacity: 0.4;
-}
-
-.layer9 .words {
-	margin-top: 200px;
-	margin-left: 60vw;
+	background-size: 37% auto !important;
+	background-position: 74% !important;
+	height: 50vh;
+	margin-bottom: 8vh;
+	border-radius: 20px;
+	grid-area: img;
 }
 
 .layer10 {
 	background: url("https://upload.wikimedia.org/wikipedia/commons/b/b2/Tycho_Brahe%27s_Stjerneborg.jpg");
-	background-size: 35% auto !important;
-	background-position: 76.5% !important;
-	height: 900px;
-	position: relative;
+	background-size: 37% auto !important;
+	background-position: 26% !important;
+	height: 50vh;
+	margin-bottom: 8vh;
+	border-radius: 20px;
+	grid-area: img;
 }
 
-.layer10:hover .words {
-	visibility: visible;
-	opacity: 0.4;
-}
-
-.layer10 .words {
-	margin-top: 200px;
-	margin-left: 20vw;
+#big {
+	margin: 50px auto;
+	text-align: center;
+	font-size: 2.5em;
+	color: white;
 }
 
 /*------------Parallax Section SEVEN revolution------------*/ 
@@ -303,13 +306,6 @@ footer:hover a {
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-}
-
-/*------------Sunken effect------------*/
-.sunken {
-	box-shadow:
-		inset 0 0 6px 7px rgba(0, 0, 0, 0.5), 
-	    inset 2px 2px 3px 3px rgba(25, 25, 25, 0.7); 
 }
 
 
