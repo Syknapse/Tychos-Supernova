@@ -7,6 +7,11 @@
   <li>Create a fully responsive design without the use of external libraries.</li>
   <li>Create a CSS grid layout that allows for different experiences on different devices and screen sizes.</li>
 </ul>
+<h3>Technologies Used</h3>
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+</ul>
 <h3>User Stories</h3>
 <ul>
   <li>User can scroll down the page and read the story of SN1572.</li>
